@@ -1,0 +1,53 @@
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class link4 {
+
+	public static void main(String[] args) {
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.mercurytravels.co.in/indian-holidays/luxury-rail-holiday-packages");
+		
+		
+	WebElement TH=driver.findElement(By.id("themes"));
+	
+	List<WebElement>values=TH.findElements(By.tagName("option"));
+	          for(int i=0;i<values.size();i++) {
+	        	  String Expected="Family";
+	        	  String Actual=values.get(i).getText();
+	        	  
+	        	  if(Actual.equals(Expected)) {
+	        		  System.out.println("TC pass");
+	        	  }
+	        	  
+	        	  
+	        	  
+	          }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

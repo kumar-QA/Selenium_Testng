@@ -1,0 +1,38 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class links12 {
+	public static void main(String[] args) {
+		
+		
+		//open browser navigate to google page
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("http://google.com");
+		
+		//get name of link
+	String lname=driver.findElement(By.linkText("Images")).getText();
+	System.out.println(lname);
+		
+	//Click on link
+	
+	 driver.findElement(By.linkText("Images")).click();
+	 
+	 //cpture url
+	 
+	 String url=driver.getCurrentUrl();
+	 System.out.println(url);
+	
+	
+	
+	
+	
+	
+		
+		
+		
+	}
+
+}
+

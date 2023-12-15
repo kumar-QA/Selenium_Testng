@@ -1,0 +1,33 @@
+package selenium;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class link4 {
+
+	public static void main(String[] args) {
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		
+		List<WebElement>images=driver.findElements(By.tagName("img"));
+		driver.close();
+		System.out.println("no of images are"+images.size());
+			for(int i=0;i<images.size();i++) {
+			System.out.println(images.get(i).getAttribute("src"));
+		}
+		
+		
+	
+	        	  
+	        	  
+	 	
+		
+		
+	}
+
+}

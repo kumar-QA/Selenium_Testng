@@ -1,0 +1,33 @@
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class links12 {
+	public static void main(String[] args) {
+		
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.mercurytravels.co.in/");
+		
+		List<WebElement>Drodpowns=driver.findElements(By.tagName("select"));
+		System.out.println(Drodpowns.size());
+	 
+		for(int i=0;i<Drodpowns.size();i++) {
+			System.out.println(Drodpowns.get(i).getAttribute("name"));
+		}
+	
+	
+	
+	
+	
+	
+		
+		
+		
+	}
+
+}
+

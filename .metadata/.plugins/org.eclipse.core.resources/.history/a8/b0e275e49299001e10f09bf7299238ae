@@ -1,0 +1,21 @@
+package JavaPrac;
+
+public class demo {
+ int c;
+public static void main(String[] args) {
+	
+	int a=10,b=0;
+	try {
+		
+		c=a/b;
+		}
+	catch(Exception x) {
+		System.out.println(x);
+	}
+	
+	System.out.println("the value of c "+c);
+	System.out.println("hi");
+	System.out.println("hello");
+
+}
+}

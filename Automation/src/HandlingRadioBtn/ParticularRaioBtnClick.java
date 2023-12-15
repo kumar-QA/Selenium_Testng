@@ -1,0 +1,23 @@
+package HandlingRadioBtn;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ParticularRaioBtnClick {
+
+	public static void main(String[] args) {
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://omayo.blogspot.com/");
+		driver.manage().window().maximize();
+	WebElement	carbtn=driver.findElement(By.xpath("//input[@value=\"Car\"]"));
+		carbtn.click();
+		if(carbtn.isSelected()) {
+			System.out.println("btn is selected");
+		}else {
+			System.out.println("btn is not selected");
+		}
+		
+	}
+
+}

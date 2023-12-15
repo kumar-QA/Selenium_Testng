@@ -1,0 +1,22 @@
+package selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Links {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.bing.com/?toWww=1&redig=6448053B72F243409FCE37C29FB5F100");
+		Thread.sleep(0);
+		List<WebElement> link=driver.findElements(By.tagName("a"));
+		System.out.println(link.size());
+		driver.close();
+	}
+
+}
