@@ -1,0 +1,37 @@
+mouseHoveraction:what ever the activities we are performing with the help of mouse
+mouseHoveraction
+
+Right click
+doubleclick
+drag and drop
+move to particu	lar element
+
+Actions
+
+contextclick()--is method which is used to perfrom rigth click on btn
+moveToElement()----to move to particular webelement
+build()--to collect the sequences of actions
+perform()--to perform the sequences of action
+doubleclick()---to perform double click on webelement
+
+
+
+how to handel Mousehover Action
+
+xpath
+
+
+<> text </>
+contanins(text(),"pass the text")
+
+//span[contains(text(),'Edit')
+
+
+
+
+frames--dividing a page into multiple pages is called as frame
+
+
+
+
+

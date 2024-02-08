@@ -1,23 +1,29 @@
 package JavaPrac;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class demo {
  static int c;
-public static void main(String[] args) {
-	int a[]=new int[5];
-	a[0]=10;
-	a[1]=110;
-	a[2]=100;
-	a[3]=120;
-	a[4]=150;
-	a[5]=200;
+public static void main(String[] args) throws InterruptedException {
 	
-	System.out.println(a[5]);
 	
-//	int a=10,b=0;
-//	c=a/b;	
-//	System.out.println("the value of c "+c);
-//	System.out.println("hi");
-//	System.out.println("hello");
-
+	//open browser Nvaigate to Webpage
+	ChromeDriver driver=new ChromeDriver();
+	driver.get("https://the-internet.herokuapp.com/");
+	driver.manage().window().maximize();
+	
+	
+	/*driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	driver.findElement(By.linkText("Dynamic Loading")).click();
+	driver.findElement(By.partialLinkText("Example 2: ")).click();
+	
+	driver.findElement(By.tagName("button")).click();*/
+	
+	
+	String data=driver.findElement(By.xpath("(//h4)[2]")).getText();
+	System.out.println(data);
 }
 }
